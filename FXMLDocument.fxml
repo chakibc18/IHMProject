@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane id="AnchorPane" fx:id="add" prefHeight="572.0" prefWidth="683.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projetihm2.FXMLDocumentController">
+   <children>
+       <ImageView fx:id="imgmain" fitHeight="372.0" fitWidth="469.0" layoutX="30.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true" />
+      <RadioButton fx:id="radioOriginal" layoutX="584.0" layoutY="19.0" mnemonicParsing="false" onAction="#effecOrigin" text="Original" />
+      <RadioButton fx:id="radioBlur" layoutX="584.0" layoutY="51.0" mnemonicParsing="false" onAction="#effecBlur" text="Flou" />
+      <RadioButton fx:id="radioGlaussian" layoutX="584.0" layoutY="91.0" mnemonicParsing="false" onAction="#effecGaluss" text="Flou gaussien" />
+      <Slider layoutX="573.0" layoutY="237.0" prefHeight="14.0" prefWidth="135.0" />
+      <Separator layoutX="552.0" layoutY="4.0" orientation="VERTICAL" prefHeight="441.0" prefWidth="6.0" />
+      <Separator layoutX="-5.0" layoutY="440.0" prefHeight="3.0" prefWidth="559.0" />
+      <Button fx:id="stop" layoutX="675.0" layoutY="201.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="44.0" text="stop" />
+      <Button fx:id="play" layoutX="617.0" layoutY="201.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="44.0" text="play" />
+      <Button fx:id="pause" layoutX="558.0" layoutY="201.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="51.0" text="pause" />
+      <ScrollPane layoutX="14.0" layoutY="445.0" prefHeight="112.0" prefWidth="532.0">
+         <content>
+            <HBox fx:id="hbox" prefHeight="101.0" prefWidth="535.0">
+               <children>
+               </children>
+            </HBox>
+         </content></ScrollPane>
+      <ComboBox layoutX="564.0" layoutY="317.0" prefWidth="150.0" />
+      <Separator layoutX="558.0" layoutY="267.0" prefHeight="3.0" prefWidth="161.0" />
+      <Button fx:id="addButton" layoutX="517.0" layoutY="417.0" mnemonicParsing="false" onAction="#addimage" text="Add" />
+      <Separator layoutX="563.0" layoutY="190.0" prefHeight="3.0" prefWidth="150.0" />
+      <RadioButton fx:id="radioShadow" layoutX="584.0" layoutY="129.0" mnemonicParsing="false" onAction="#effecShadow" text="Ombre interne" />
+      <RadioButton fx:id="radioSepia" layoutX="584.0" layoutY="162.0" mnemonicParsing="false" onAction="#effecSepia" text="Sepia" />
+   </children>
+</AnchorPane>
